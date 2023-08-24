@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Mia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cambo&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- nav -->
+    <header class="header">
+        <div class="logo-container">
+          <img src="./img/logo.png" alt="Logo" class="zoomable">
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="./paginas/menu.html">CARTA</a></li>
+            <li><a href="./paginas/nosotros.html">SOBRE NOSOTROS</a></li>
+            <li><a href="./paginas/contacto.html">CONTACTENOS</a></li>    
+          </ul>
+        </nav>
+      </header> 
+
+    <!-- contenido -->
+    <main>
+        <!-- banner de inicio -->
+        <div id="contenido" class="contenido">
+            <div class="inicio">
+                <img src="img/img-inicio.jpg" alt="">
+                <div class="card">
+                    <p class="large-text">Bienvenidos</p>
+                    <p class="medium-text">Casa Mia Resto/Bar</p>
+                    <a href="./paginas/menu.html" class="btn"><button>Ver menú</button></a>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <div class="contenedor-categoria">
+                    <div class="contenedor-img">
+                        <div class="desayuno">
+                            <a href="./paginas/menu.html#desayuno"><img src="img/coffee_4035391.png" alt=""></a>
+                                <p>Desayunos</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-img">
+                        <div class="almuerzo">
+                            <a href="./paginas/menu.html#almuerzo"><img src="img/iftar_2918130.png" alt=""></a>
+                                <p>Almuerzos</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-img">
+                        <div class="cena">
+                            <a href="./paginas/menu.html#cena"><img src="img/fast-food_738079.png" alt=""></a>
+                                <p>Cena</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-img">
+                        <div class="bebidas">
+                            <a href="./paginas/menu.html#bebida"><img src="img/cocktail_3126588.png" alt=""></a>
+                                <p>Bebidas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mejores platos -->
+
+            <div class="platos">
+                <div class="contenedor-titulo">
+                    <h1>Mejores Valorados</h1>
+                </div>
+                <div>
+                    <div class="contenedorpl">
+                        <img src="img/primer-plano-vertical-taza-plastico-cafe-frio-crema-vainilla (2).jpg" alt="" class="img-G">
+                        <div class="descripcion">
+                            <h3>Frappe de Café</h3>
+                            <p>bebida de café fuerte con leche, jarabe de chocolate y crema batida</p>
+                        </div>
+                    </div>
+                    <div class="contenedorpl">
+                        <img src="img/pollo-frito-mesa-madera (2).jpg" alt="" class="img-G">
+                        <div class="descripcion">
+                            <h3>Pollo Frito</h3>
+                            <p> trozos de pollo sazonados, empanizados con un exterior crujiente y dorado</p>
+                        </div>
+                    </div>
+                    <div class="contenedorpl">
+                        <img src="img/hamburguesa-ternera-lista-ser-servida-papas-fritas.jpg" alt="" class="img-G">
+                        <div class="descripcion">
+                            <h3>Hamburgesa</h3>
+                            <p>Pan, carne, jamon, queso, huevo, vegetales frescos y salsas</p>
+                        </div>
+                    </div>
+                    <div class="contenedorpl">
+                        <img src="img/vista-superior-sandwiches-jamon-tostadas-dentro-placa-sobre-superficie-oscura (2).jpg" alt="" class="img-G">
+                        <div class="descripcion">
+                            <h3>sándwich Club House</h3>
+                            <p>Pan tres capas, pollo desmechado con salsa de la casa, jamon, queso, tocino, vegetales frescos y salsas</p>
+                        </div>
+                    </div>
+                    <div class="contenedorpl">
+                        <img src="img/cerrar-pasteles-fritos (2).jpg" alt="" class="img-G">
+                        <div class="descripcion">
+                            <h3>Empanadas de Carne</h3>
+                            <p>Masa cuidadosamente elaborada, y un relleno sabroso de carne sazonada</p>
+                        </div>
+                    </div>
+                    <div class="contenedorpl">
+                        <img src="img/closeup-foto-persona-vertiendo-cafe-polvo-sobre-cafe (2).jpg" alt="" class="img-G">
+                        <div class="descripcion">
+                            <h3>Capuccino</h3>
+                            <p>Armonía perfecta entre el café y la textura suave y cremosa de la leche vaporizada.</p>
+                        </div>
+                    </div>
+                    <div class="contenedorpl">
+                        <img src="img/batido-fresa-mesa (2).jpg" alt="" class="img-G">
+                        <div class="descripcion">
+                            <h3>Batido de fresa</h3>
+                            <p>Bebida refrescante y exquisita que combina la frescura de las fresas y la suavidad de los lácteos.</p>
+                        </div>
+                    </div>
+                    <div class="contenedorpl">
+                        <img src="img/vista-frontal-granola-frutas-nueces-vaso-fresas-tazon-rosa (2).jpg" alt="" class="img-G">
+                        <div class="descripcion">
+                            <h3>Granola</h3>
+                            <p>Crujiente granola, yogur cremoso y frutas frescas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ubicacion --> 
+
+            <div class="ubicacion">
+                <div class="contenedor-titulo2"><h1>Ubicacion</h1></div>
+                <div class="container">
+                    <div class="column">
+                        <div id="map"></div>
+                    </div>
+                    <div class="column">
+                        <div class="img-ubi">
+                            <img src="img/plano-interior-cafe-sillas-cerca-bar-mesas-madera.jpg" alt="">
+                        </div>
+                    <div class="horarios">
+                        <h1>horarios</h1>
+                        <br>
+                        <p>lunes a viernes 7:00 am a 9:00 pm</p>
+                        <p>fines de semana 9:00 am a 7:00pm</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="social-icon">
+            <a href="#"><img src="img/facebook-app-symbol_20837.png" alt=""></a>
+            <a href="#"><img src="img/instagram_1384031.png" alt=""></a>
+            <a href="#"><img src="img/whatsapp_1384023.png" alt=""></a>
+        </div>
+        <h1>Casa mia Resto/Bar</h1>
+        <p>Copyright © 2023 Valentina Fernández</p>
+    </footer>
+
+    <script src="mapa.js"></script>
+</body>
+</html>
